@@ -1,7 +1,9 @@
-variable "resource_group_name_prefix" {
-  default       = "rg"
-  description   = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
+
+variable "prefix" {
+  description = "The prefix to be used for resource names"
+  default     = "playground"
 }
+
 
 variable "resource_group_location" {
   default       = "Switzerland North"
